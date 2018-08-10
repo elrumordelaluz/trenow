@@ -1,0 +1,23 @@
+{
+  "name": "trenow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author":
+    "Lionel T <elrumordelaluz@hotmail.com> (https://elrumordelaluz.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "9.3.3",
+    "node-fetch": "2.2.0"
+  },
+  "devDependencies": {
+    "micro-dev": "3.0.0"
+  },
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev"
+  },
+  "now": {
+    "alias": "https://tre.now.sh/",
+    "files": ["index.js"]
+  }
+}

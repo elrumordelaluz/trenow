@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 module.exports = async (req, res) => {
   const date = new Date()
   const url =
-    'http://viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/partenze/S06923'
+    'http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/partenze/S06923'
   const response = await fetch(`${url}/${date}`)
   const json = await response.json()
   const trains = json.map(
